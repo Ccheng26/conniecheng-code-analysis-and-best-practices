@@ -6,8 +6,9 @@ public class Song {
 	public static boolean hasAnimal = false;
 	
 	public static final void songIntro () {
-		intro();
+		//removed intro()
 		System.out.println("Old MacDonald had a farm");
+		//extracted method for try/catch block and renamed to pause
 		pause();
 		System.out.println("E - I - E - I - O");
 		pause();
