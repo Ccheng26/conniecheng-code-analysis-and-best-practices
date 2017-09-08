@@ -5,15 +5,20 @@ import java.io.*;
 public class Main {
 	
 	public static void main(String[] args) {
-		InputStreamReader x = new InputStreamReader(System.in);
-		BufferedReader y = new BufferedReader(x); 
-
+		//rename x to input
+		InputStreamReader input = new InputStreamReader(System.in);
+		//rename y to newInput
+		BufferedReader newInput = new BufferedReader(input); 
+		
+		//renamed a to Song
 		Song.songIntro();
 		
 		do {
 			try {
-				String z = y.readLine().toLowerCase();
-				new Song(z);
+				//renamed z to animal
+				String animal = newInput.readLine().toLowerCase();
+				
+				new Song(animal);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -23,7 +28,7 @@ public class Main {
 	}
 		
 }
-
+//renamed a to Song
 class Song {
 	private String animalSound;
 	static boolean hasAnimal = false;
