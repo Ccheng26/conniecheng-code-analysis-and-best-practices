@@ -33,16 +33,6 @@ public class Song {
 			animalSound = Chicken.cluck();
 			printSong(animal, animalSound);
 		} else {
-			boolean newAnimal = true;
-			while (newAnimal) {
-				try {
-					Thread.sleep(2000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-
 			System.out.println("Sorry, Mr. Macdonald is out of " + animal + "s \n"
 					+ "Try another animal...");
 		}
