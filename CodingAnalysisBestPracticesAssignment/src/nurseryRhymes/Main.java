@@ -62,7 +62,7 @@ class Song {
 	Song (String animal) {
 		if(animal == "chicken") {
 			hasAnimal = true;
-			animalSound = B.x();
+			animalSound = Chicken.cluck();
 			printSong(animal, animalSound);
 		} else {
 			boolean newAnimal = true;
@@ -148,8 +148,8 @@ class Song {
 
 
 
-class B {
-	public static String x () {
+class Chicken {
+	public static String cluck () {
 		return "bkawhh";
 	}
 }
