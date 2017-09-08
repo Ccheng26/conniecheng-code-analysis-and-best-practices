@@ -1,6 +1,7 @@
 package nurseryRhymes;
 
 import java.io.*;
+//added import statement to have access to classes Chicken and Song
 import nurseryRhymes.oldMacdonald.*;
 
 public class Main {
