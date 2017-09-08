@@ -33,6 +33,7 @@ public class Song {
 			animalSound = Chicken.cluck();
 			printSong(animal, animalSound);
 		} else {
+			//removed infinite while loop checking for newAnimal
 			System.out.println("Sorry, Mr. Macdonald is out of " + animal + "s \n"
 					+ "Try another animal...");
 		}
