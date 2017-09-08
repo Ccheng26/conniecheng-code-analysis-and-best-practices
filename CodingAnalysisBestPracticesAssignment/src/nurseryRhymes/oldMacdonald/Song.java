@@ -8,27 +8,21 @@ public class Song {
 	public static final void songIntro () {
 		intro();
 		System.out.println("Old MacDonald had a farm");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("E - I - E - I - O");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("And on that farm he had a ...");
+		pause();
+		System.out.println("Enter an animal to see if its on Mr. MacDonald's farm:");
+	}
+
+	public static void pause() {
 		try {
 			Thread.sleep(1500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Enter an animal to see if its on Mr. MacDonald's farm:");
 	}
 	
 	public Song (String animal) {
@@ -55,54 +49,19 @@ public class Song {
 	void printSong (String animal, String animalSound) {
 		
 		System.out.println("Nice!!! He does have " + animal + "s");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("E - I - E - I - O");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("with a " + animalSound + " " + animalSound + " here...");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println(" and a " + animalSound + " " + animalSound + " there...");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("  here a " + animalSound + " there a " + animalSound);
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("   everywhere a "  + animalSound + " " + animalSound + "!!!!!!");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("    Old MacDonald had a farm");
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		pause();
 		System.out.println("     E - I - E - I - OoooOoOooo ");
 	}
 	
