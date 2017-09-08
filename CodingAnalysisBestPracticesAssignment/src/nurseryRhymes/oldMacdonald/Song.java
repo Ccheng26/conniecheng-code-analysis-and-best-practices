@@ -27,7 +27,8 @@ public class Song {
 	}
 	
 	public Song (String animal) {
-		if(animal == "chicken") {
+		//changed if condition for animal == "chicken" as per PMD
+		if(animal.equals("chicken")) {
 			hasAnimal = true;
 			animalSound = Chicken.cluck();
 			printSong(animal, animalSound);
