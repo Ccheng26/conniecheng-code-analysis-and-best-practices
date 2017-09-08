@@ -8,23 +8,23 @@ public class Main {
 		InputStreamReader x = new InputStreamReader(System.in);
 		BufferedReader y = new BufferedReader(x); 
 
-		A.songIntro();
+		Song.songIntro();
 		
 		do {
 			try {
 				String z = y.readLine().toLowerCase();
-				new A(z);
+				new Song(z);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} while (!A.hasAnimal);
+		} while (!Song.hasAnimal);
 		
 	}
 		
 }
 
-class A {
+class Song {
 	private String animalSound;
 	static boolean hasAnimal = false;
 	
@@ -54,7 +54,7 @@ class A {
 		System.out.println("Enter an animal to see if its on Mr. MacDonald's farm:");
 	}
 	
-	A (String animal) {
+	Song (String animal) {
 		if(animal == "chicken") {
 			hasAnimal = true;
 			animalSound = B.x();
@@ -137,7 +137,7 @@ class A {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} while (!A.hasAnimal);
+		} while (!Song.hasAnimal);
 	}
 }
 
